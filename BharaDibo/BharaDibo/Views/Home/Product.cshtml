@@ -1,0 +1,12 @@
+﻿﻿@model Object[]
+@{
+    ViewBag.Title = "Product";
+    var Product = (BharaDibo.Models.Product)Model[0];
+    var comment = (List<BharaDibo.Models.Comment>)Model[1];
+}
+<h2>Product</h2>
+@Product.PRImage;
+@foreach (var item in comment)
+{
+    @item.id;
+}

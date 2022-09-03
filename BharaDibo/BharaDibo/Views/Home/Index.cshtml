@@ -1,0 +1,176 @@
+﻿@model List<BharaDibo.Models.Product>
+
+@{
+    ViewBag.Title = "Home Page";
+    @Styles.Render("~/Content/css");
+}
+
+<div class="container">
+    <h2 class="text-center mt-3">Forget about buying,<br />Lets Start borrowing!</h2>
+
+    <hr />
+    <h3 class="text-center mt-3">Keyboard</h3>
+    <div class="row">
+        @{
+            int i = 0;
+        }
+        @foreach (var item in Model)
+        {
+            if (item.PRType.Equals("Keyboard"))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 menuall bg-gradient bg-opacity-75 rounded-bottom" style="background-color:crimson">
+                    <div class="Items" >
+                        <img src="~/images/@item.PRImage">
+                        <div class="allthings">
+                            <p class="itemheading">@item.PRName<p>
+                            <p class="itemdes">@item.PRDescription.Substring(0, 100) .....</p>
+                            <div class="add d-inline-flex">
+                                <p class="addalliconsp">@item.PRPrize/=</p>
+                                @*<div class="addall">
+                                        <button class="minusplus">
+                                            <i class="addallicons fa fa-minus quantity"></i>
+                                        </button>
+                                        <p class="addalliconsp">1</p>
+                                        <button class="minusplus">
+                                            <i class="addallicons fa fa-plus"></i>
+                                        </button>
+                                    </div>*@
+                            </div>
+                            <button class="addtocart" onclick="location.href='/Home/ProductPreview/@item.PRID'" style="background-color:darkslategrey; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" >
+                                <p class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Details</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                i++;
+            }
+            if (i == 4)
+            {
+
+                break;
+            }
+        }
+
+    </div>
+    <button class="viewmore" onclick="location.href='/Home/ProductPage?category=Keyboard'" style="background-color:darkslategrey; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" >
+        <p class="">
+            VIEW MORE
+            <i class="fa fa-arrow-right"></i>
+        </p>
+    </button>
+
+    <hr />
+
+    <h3 class="text-center mt-3">Bass</h3>
+    <div class="row">
+        @{
+            i = 0;
+        }
+        @foreach (var item in Model)
+        {
+            if (item.PRType.Equals("Bass"))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 menuall bg-gradient bg-opacity-75 rounded-bottom" style="background-color:crimson">
+                    <div class="Items">
+                        <img src="~/images/@item.PRImage">
+                        <div class="allthings">
+                            <p class="itemheading">@item.PRName<p>
+                            <p class="itemdes">@item.PRDescription.Substring(0, 100) .....</p>
+                            <div class="add d-inline-flex">
+                                <p class="addalliconsp">@item.PRPrize/=</p>
+                                @*<div class="addall">
+                                        <button class="minusplus">
+                                            <i class="addallicons fa fa-minus quantity"></i>
+                                        </button>
+                                        <p class="addalliconsp">1</p>
+                                        <button class="minusplus">
+                                            <i class="addallicons fa fa-plus"></i>
+                                        </button>
+                                    </div>*@
+                            </div>
+                            <button class="addtocart" onclick="location.href='/Home/ProductPreview/@item.PRID'">
+                                <p class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Details</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                i++;
+            }
+            if (i == 4)
+            {
+
+                break;
+            }
+        }
+
+    </div>
+    <button class="viewmore" onclick="location.href='/Home/ProductPage?category=Bass'">
+        <p class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+            VIEW MORE
+            <i class="fa fa-arrow-right"></i>
+        </p>
+    </button>
+
+    <hr />
+
+    <h3 class="text-center mt-3">Drums</h3>
+    <div class="row">
+        @{
+            i = 0;
+        }
+        @foreach (var item in Model)
+        {
+            if (item.PRType.Equals("Drums"))
+            {
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 menuall bg-gradient bg-opacity-75 rounded-bottom" style="background-color:crimson">
+                    <div class="Items">
+                        <img src="~/images/@item.PRImage">
+                        <div class="allthings">
+                            <p class="itemheading">@item.PRName<p>
+                            <p class="itemdes">@item.PRDescription.Substring(0, 100) .....</p>
+                            <div class="add d-inline-flex">
+                                <p class="addalliconsp">@item.PRPrize/=</p>
+                                @*<div class="addall">
+                                        <button class="minusplus">
+                                            <i class="addallicons fa fa-minus quantity"></i>
+                                        </button>
+                                        <p class="addalliconsp">1</p>
+                                        <button class="minusplus">
+                                            <i class="addallicons fa fa-plus"></i>
+                                        </button>
+                                    </div>*@
+                            </div>
+                            <button class="addtocart" onclick="location.href='/Home/ProductPreview/@item.PRID'" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+                                <p class="" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Details</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                i++;
+            }
+            if (i == 4)
+            {
+
+                break;
+            }
+        }
+
+    </div>
+    <button class="viewmore" onclick="location.href='/Home/ProductPage?category=Drums'">
+        <p class="">
+            VIEW MORE
+            <i class="fa fa-arrow-right"></i>
+        </p>
+    </button>
+
+    <hr />
+
+    @*<hr />*@
+
+    @*<h3 class="mt-3 text-center">Rental Service</h3>*@
+
+
+</div>
+
+
+
