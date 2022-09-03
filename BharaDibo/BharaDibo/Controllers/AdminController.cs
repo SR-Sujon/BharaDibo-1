@@ -14,7 +14,7 @@ namespace BharaDibo.Controllers
 {
     public class AdminController : Controller
     {
-        BharaDibo_DBEntities3 db = new BharaDibo_DBEntities3();
+        BharaDibo_DBEntities db = new BharaDibo_DBEntities();
 
         // GET: Students
         public async Task<ActionResult> AdminIndex()

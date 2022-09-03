@@ -11,7 +11,7 @@ namespace BharaDibo.Controllers
 {
     public class HomeController : Controller
     {
-        BharaDibo_DBEntities3 db = new BharaDibo_DBEntities3();
+        BharaDibo_DBEntities db = new BharaDibo_DBEntities();
         public static int contactE;
         public static List<int> CartItems = new List<int>();
 

@@ -90,7 +90,14 @@ Values('Gibson Les Paul','gibsonlespaul.png','Guitar','The Gibson Les Paul is a 
 ('Gibson ES','gibsones.png','Guitar','The Gibson ES-335 is the worlds first commercial semi-hollowbody electric guitar, sometimes known as semi-acoustic.',13000,5,8),
 ('Gibson SG','gibsonsg.png','Guitar','Gibson SG is a world class guitar; a solid-body electric guitar model introduced by Gibson in 1961 as the Gibson Les Paul SG.',7000,4.8,8)
 
-
+Insert into Product(PRName,PRImage,PRType,PRDescription,PRPrize,PRRating,PRQuantity)
+Values('Harry Potter','hp.png','Book','For the first time ever, J.K. Rowling’s 7 bestselling books are available in a stunning paperback boxed set! The ultimate Harry Potter collection for fans of all ages!',39,5,11),
+('To Kill a Mockingbird','to kill.png','Book','The unforgettable novel of a childhood in a sleepy Southern town and the crisis of conscience that rocked it, first published in 1960.',13,4.7,18),
+('Lord of the Rings','lotr.png','Book','When Thorin Oakenshield and his dwarves embark upon a dangerous quest to reclaim the hoard of gold, Gandalf suggests Bilbo Baggins.',95,5,8),
+('The Alchemist','thealchemist.png','Book','The Alchemist by Paulo Coelho continues to change the lives of its readers forever.',12,4.8,12),
+('Around the World in 80 Days','around.png','Book','Around the World in Eighty Days is a classic adventure novel by the French writer Jules Verne, published in 1873.',7,4.8,8),
+('Dune','dune.png','Book','Perfect for longtime fans and new readers alike—a beautiful trade paperback boxed set of the first six novels in Frank Herbert''s Dune Saga.',55,5,18),
+('The Foundation','foundation.png','Book','This book set contains the complete collection of 7 books of The Foundation series.',58,5,18)
 
 Create table OrderList(
 	OrderID int primary key identity(1,1),
