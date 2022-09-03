@@ -296,7 +296,7 @@ namespace BharaDibo.Controllers
         }
 
 
-         
+          
         public ActionResult ConfirmOrder(string totalvalue) 
         {
 
