@@ -300,7 +300,7 @@ namespace BharaDibo.Controllers
         public ActionResult ConfirmOrder(string totalvalue)
         {
 
-            OrderList orderlist = new OrderList();
+            OrderList orderlist = new OrderList(); 
             orderlist.cusEmail = Session["CUSEmail"].ToString();
             if(String.IsNullOrEmpty(totalvalue))
             {
