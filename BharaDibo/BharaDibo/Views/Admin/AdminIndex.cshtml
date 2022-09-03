@@ -1,0 +1,70 @@
+﻿
+@model IEnumerable<BharaDibo.Models.Customer>
+
+
+@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin Index</title>
+</head>
+<body>
+
+    @*<a href="@Url.Action("Create", "Customers")"><i class="btn btn-success btn-sm">Create</i></a>*@
+    <br />
+    <br />
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CUSEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CUSName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CUSContactNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CUSBalance)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CUSEmail)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CUSName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CUSContactNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CUSBalance)
+                </td>
+                <td>
+                    @* <a href="@Url.Action("Edit", "Customers", new { id = item.CUSEmail })">
+                            <i class="fa fa-edit btn btn-info btn-sm"></i>
+                        </a> |
+                        <a href="@Url.Action("Details", "Customers", new { id = item.CUSEmail })">
+                            <i class="btn btn-warning btn-sm">Details</i>
+                        </a> |*@
+                    @*<a href="@Url.Action("Delete", "Customers", new { id = item.CUSEmail })">
+                            <i class="btn btn-danger btn-sm">Delete</i>
+                        </a>*@
+                </td>
+            </tr>
+        }
+
+    </table>
+</body>
+</html>
