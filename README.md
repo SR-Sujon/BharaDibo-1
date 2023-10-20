@@ -10,5 +10,5 @@ It's one of our university projects on ASP.NET. Some snapshots of our project ar
 
 
 <br /><br />
-Entity Relationship (ER) Diagram of our BharaDibo Website is given below.
+Entity Relationship (ER) Diagram of our BharaDibo Website is given below.<br />
 ![SD Lab ERD drawio](https://github.com/AKC23/BharaDibo/assets/57568723/24351b63-24f7-404e-959c-3e9358b2ffc2)
