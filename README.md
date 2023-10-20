@@ -8,7 +8,6 @@ It's one of our university projects on ASP.NET. Some snapshots of our project ar
 ![Picture1](https://github.com/AKC23/BharaDibo/assets/57568723/af3dfba6-1237-4e20-b5ea-a51c40e2a04d)
 ![Picture2](https://github.com/AKC23/BharaDibo/assets/57568723/c1c3d302-fe9e-4327-9afa-3d9c45c366e8)
 
-
 <br /><br />
-Entity Relationship (ER) Diagram of our BharaDibo Website is given below.<br />
+Entity Relationship (ER) Diagram of our BharaDibo Website is given below.<br /> <br />
 ![SD Lab ERD drawio](https://github.com/AKC23/BharaDibo/assets/57568723/24351b63-24f7-404e-959c-3e9358b2ffc2)
